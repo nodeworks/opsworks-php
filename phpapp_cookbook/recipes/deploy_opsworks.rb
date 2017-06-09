@@ -8,13 +8,3 @@ application app_path do
     deploy_key app['app_source']['ssh_key']
   end
 end
-
-# install composer
-script "install_composer" do
-  interpreter "bash"
-  user "root"
-  cwd "/var/app"
-  code <<-EOH
-  composer install --prefer-source --optimize-autoloader  --no-interaction
-  EOH
-end
