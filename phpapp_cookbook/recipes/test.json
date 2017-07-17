@@ -1,0 +1,198 @@
+{
+    "aws_opsworks_agent": {
+        "version": "4023-20170402215230",
+        "valid_client_activities": [
+            "reboot",
+            "stop",
+            "deploy",
+            "grant_remote_access",
+            "revoke_remote_access",
+            "update_agent",
+            "setup",
+            "configure",
+            "update_dependencies",
+            "install_dependencies",
+            "update_custom_cookbooks",
+            "execute_recipes",
+            "sync_remote_users"
+        ],
+        "command": {
+            "type": "deploy",
+            "args": {
+                "app_ids": [
+                    "aa15ed5d-4eb0-4590-8234-ee311f0f6e46"
+                ]
+            },
+            "sent_at": "2017-06-09T04:28:55+00:00",
+            "command_id": "97233709-8ff7-46fd-9e23-c79c8da0e668",
+            "iam_user_arn": "arn:aws:iam::239964847280:user/nodeworks",
+            "instance_id": "4bc4423d-5848-4d6d-b9ce-a638fba2e555"
+        },
+        "resources": {
+            "command": {
+                "type": "deploy",
+                "args": {
+                    "app_ids": [
+                        "aa15ed5d-4eb0-4590-8234-ee311f0f6e46"
+                    ]
+                },
+                "sent_at": "2017-06-09T04:28:55+00:00",
+                "command_id": "97233709-8ff7-46fd-9e23-c79c8da0e668",
+                "iam_user_arn": "arn:aws:iam::239964847280:user/nodeworks",
+                "instance_id": "4bc4423d-5848-4d6d-b9ce-a638fba2e555"
+            },
+            "apps": [
+                {
+                    "app_id": "aa15ed5d-4eb0-4590-8234-ee311f0f6e46",
+                    "app_source": {
+                        "password": null,
+                        "revision": "master",
+                        "ssh_key": "-----BEGIN RSA PRIVATE KEY-----\nMIIEoQIBAAKCAQEA4yEK0dCVpi4q5K5nnEGVlwhb0fkg/9X6zZmwqr7jEXXBs70p\nQ1KimF88dly2vefL9jsi0fkh5rgANOxQrr93+rbDtSTXIbnNDHAuIjGZ6nZ94tez\nCfrcakM9Ft/J2BMA4xsBBFC0cV9pADqt90Grla6S+hYz8W7fZaEAzA6sZ3jqzLqZ\nFA54hPDYfQWbLXyaB+CceTsb3OPPiDZ2UMKG091NgcnOGScvyzoyN/Gm09lITLXe\nh+vJc5Ou27Tf3we+udxW19Q9yYpmRlaDhnRjrTVzWHETiM2Cc4NcKJrhiBVIg1ff\nfasS5NHnN4AWXPsdJRNvCaTwrxok7G9BuEA4UwIBIwKCAQBUXLrgN4gKhi0wXgk6\nCbs4GQwpaymDmJ776KC0csleQa5Ys/liJgHg0uqSXPNrG5Tmbbx54DEpz1CIr4uu\nnuNrwDoQFP9y7T2IRuyQW5Dwr6sZvdTJMUqN3nXGquSSFa/fUyxDbm7oSAJtzKcE\nERPYgquet8omeaNu5AecP/bkme03i+E2Puas4YHn5TEHdv+hiTq3YS6iejAFs3hM\nqywZqkdkdQdyCg9GAB+lChD9U2IxtS2kDxn64qhWt//A8WcGmICa8RwL0qHvrfvR\naYBkRClADHOVF5gud8QvPhk33p0Q+s6Yna4IHljwYiybwdC4Qa6LTvzMqDWf8//V\n4YBzAoGBAPOwXLjFvU7NN5dShY06xO9Br2H2Ivxt9E/X7BUM25vEWXO66erPVT56\nwaf1xr4DnKH6EDkT0kK7x/gYZ41TOPe+AFso1iRQvWJYBNofOxILLHmE9Mr5tIpL\njh67dxkN8HMInDU8gvYOxOERWqi6McLu8y6BgybJNPTOfhWuf03XAoGBAO6agtC8\nRVo1C1mSyDstY5gTSZxt/slDV8NSLB1hy0zxzRmRB0Vlj3lsn5eF1LsSg4pC+O9/\nU1R2y/GLDyvTHXaHo9yD/s32gjxBpKD4WFpss+06vTjCnl5vxnwBo/q8V1X+P8zN\npvmFHcftuqbEXRSU0eDCTSFIvdrRwrZTxEHlAoGBAKAjcCGmg7dw6gRazMqFtJ05\nywXcQuBlg0ppUf80VczC27Jzg8YwediZz7eEQMYCX52kU828kXxPg2iFENk2sGhJ\nqHZrSuSqFg1tCoC1b/XqFel0oN0nv8iYDO+fw0r6iBEUSWTP/knscr/Jk1jvYodp\n0wFNyza+vGZbzzLRwV8JAoGAG0TbwBWERNLcuceh2uCdqvrj110HLPHA4x9Vf7Nn\nsQWxCjx13AubXlWOlPlaJAIdqWa9XTMfd14IreQBu92c95p5IIQdHtpYBuLuPkhE\nnJ61ejKZSFDBpGSLtmaWZcxhwK9Xv6J5e5ovSgyKXDOy3cfdeMW/rAhQNkPbvRDj\nOrsCgYBQuHVcknweNMrcBLMxSrN137f8srCVx8g6sqUJMpkrFqOFZ5FNpGp7ftxZ\nr19kh39rQux1tukHgVSbv+T8gCnym1gONizBJ1vwvdMRSU+F2VJPZg/A0auTbSNU\n8Yz/oMsN9OHoMcVJNXoLHtWAfBL7+Hm4Pq2EQrfZfJ47V/W+Pg==\n-----END RSA PRIVATE KEY-----",
+                        "type": "git",
+                        "url": "git@github.com:nodeworks/bnsforensics.git",
+                        "user": null
+                    },
+                    "attributes": {
+                        "auto_bundle_on_deploy": true,
+                        "aws_flow_ruby_settings": {
+                        },
+                        "document_root": null,
+                        "rails_env": null
+                    },
+                    "data_sources": [
+                        {
+                            "arn": "arn:aws:rds:us-east-1:239964847280:db:bns",
+                            "type": "RdsDbInstance",
+                            "database_name": "bns_forensics"
+                        }
+                    ],
+                    "domains": [
+                        "bns_forensics"
+                    ],
+                    "enable_ssl": false,
+                    "environment": {
+                    },
+                    "name": "BNS Forensics",
+                    "shortname": "bns_forensics",
+                    "ssl_configuration": {
+                        "certificate": null,
+                        "private_key": null,
+                        "chain": null
+                    },
+                    "type": "other"
+                }
+            ],
+            "layers": [
+                {
+                    "layer_id": "12930ea6-7fe8-4419-8d0e-9c060a98aacb",
+                    "name": "BNS Forensics",
+                    "packages": [
+
+                    ],
+                    "shortname": "bns_forensics",
+                    "type": "custom",
+                    "volume_configurations": [
+
+                    ],
+                    "cloud_watch_logs_configuration": {
+                        "enabled": false,
+                        "log_streams": [
+                            {
+                                "file": "/var/lib/aws/opsworks/chef/*.log",
+                                "log_group_name": "Production/bns_forensics/opsworks-command-log"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "instances": [
+                {
+                    "ami_id": "ami-96b2ed80",
+                    "architecture": "x86_64",
+                    "auto_scaling_type": null,
+                    "availability_zone": "us-east-1a",
+                    "created_at": "2017-06-09T02:13:12+00:00",
+                    "ebs_optimized": false,
+                    "ec2_instance_id": "i-0317e43af589aebaf",
+                    "elastic_ip": null,
+                    "hostname": "ares",
+                    "instance_id": "4bc4423d-5848-4d6d-b9ce-a638fba2e555",
+                    "instance_type": "t2.micro",
+                    "layer_ids": [
+                        "12930ea6-7fe8-4419-8d0e-9c060a98aacb"
+                    ],
+                    "os": "Custom",
+                    "private_dns": "ip-10-0-0-212.ec2.internal",
+                    "private_ip": "10.0.0.212",
+                    "public_dns": "ec2-34-200-214-245.compute-1.amazonaws.com",
+                    "public_ip": "34.200.214.245",
+                    "root_device_type": "ebs",
+                    "root_device_volume_id": "vol-0d6cbf3fd825c65e3",
+                    "ssh_host_dsa_key_fingerprint": "77:dd:d3:b2:a8:8a:66:37:36:a4:bf:01:09:ff:ce:a7",
+                    "ssh_host_dsa_key_public": "ssh-dss AAAAB3NzaC1kc3MAAAEBANh6d4r7XDi7HjxIyaGcyh9gEjC4bVrbCHi2sdVEYq52oDXJevi87kHGJXCnNxWnR7YRaDukT81U57EKwXlFDY5SWKikFmF7zRcUX+qf+C5pEwICy4SoT6FKDyQDSLG6zJJONI1OAvSfVID5CxtqpkiqSXIfUPPZfR7KK4ADVo+NnMCQNZs5E6LsySm4TVnOIXqSgx+50zOa9ItKN8QMYvxBxWgF3O5pzfFe+Y5aJg2Y2tK7OaSNT6uJxZqvf8YuC4317gaaI1IBjEiIPXw1UKZv/1nXopzW5JGQSTfQSei2q2VIY2Y9QCMvh3MgnkO6HKRdTO/gYl3uxTDa8PxNugMAAAAhAK87OZMPrUtrjOksqWQ0aLqExLmnKf8Pk6LaDa0atvwxAAABAFXBf5vSFBk1fTXdir6HBCO541dC8Y8owkEVDkCSwgQ7XkQmfiiBKLQEdjLaJU5E9IHMPkimLD2hk3zIl9/vf3Jl7YNEFhtl8eTt6UxGPKPQyYzWhYNzEWPzaapSKUPb5G1iDglRzBKHeieiKgOZWDlhPTdp+dVQ/NkwOWWc1eq4UJ/1WOcnmJtRkiRSo4g+hqjGPnpLMdhpeom1bXBTDJmPB0JcI5+cF1kE2SoVR8AwTr2Tq5RR57i/+6JTT28A1VuqnRxXabdxEHj4CFxf/OZiFGiMejYUtDD2dS3LdBiprTyXX5r2pvV4gQLgN7cWGs/m6RSe1h0b+fwF0jK3a8EAAAEACgsmHKlhvpPgXKSbzkwcC62S0nZ1TNUgg9584KYmHRd98zI0IO0d1biqzkqCYlhrnoudhziMORQFaDz6ugurYZ+KyvUW83EOXYvLRIBeDWQtuzvYeRDxmj2vzlQwVQQfEi+ZjA2Xo+9qOFiYXVdznwwAYXZ4gtVX46XQdewtgzdKMIycHdxwrmOMxYRzxFiAGEkUon8U8pKXnasxd47gwtW12IRln3/wgVQYWykazdo/ysZnCuLdxHrxsV99sIn+Zt+TpUqIfJvEKhWNe5/MbBS4M0udzFEoLb0GJaf7WQGZkzAOCld3SKzdHmLp2WNmpj6BYfdlMpn8nNA1kwvNCw==",
+                    "ssh_host_rsa_key_fingerprint": "10:05:bb:4d:17:59:57:d9:74:39:e3:de:63:ff:a6:ac",
+                    "ssh_host_rsa_key_public": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCTt26/PjEHS27AbGYLjTR1CsbkJmDESExt0OuXArTEPoD0px35sw7vW+2wj2FN6ICejkm6frxnN9tyr6QajYbGEgecwFVARcuuvoPcmEXyx014c0+0wVE5BXoC8BkmPtMmLzCevtCrbesz68S5TwPqUNOzE4zlWbOK5zUDnEDBPYV0apoo5UINM2r5CuKVvrPKaY0/b8wGjwaMz+SCPfO3UMskNbZDDnw+/J0X642z5R7yK4eg4wK9tGbGFyBsfgMGhpRAfNc0bHxnVFCegvKksG0AV97h4MfDQCfGUJgbmup6QfzuFCqwADS2vki5935Xqta9w7M7eQoIQgJVT6H/",
+                    "status": "online",
+                    "subnet_id": "subnet-af3631ca",
+                    "virtualization_type": "hvm",
+                    "infrastructure_class": "ec2",
+                    "ssh_host_dsa_key_private": "-----BEGIN DSA PRIVATE KEY-----\nMIIDVgIBAAKCAQEA2Hp3ivtcOLsePEjJoZzKH2ASMLhtWtsIeLax1URirnagNcl6\n+LzuQcYlcKc3FadHthFoO6RPzVTnsQrBeUUNjlJYqKQWYXvNFxRf6p/4LmkTAgLL\nhKhPoUoPJANIsbrMkk40jU4C9J9UgPkLG2qmSKpJch9Q89l9HsorgANWj42cwJA1\nmzkTouzJKbhNWc4hepKDH7nTM5r0i0o3xAxi/EHFaAXc7mnN8V75jlomDZja0rs5\npI1Pq4nFmq9/xi4LjfXuBpojUgGMSIg9fDVQpm//WdeinNbkkZBJN9BJ6LarZUhj\nZj1AIy+HcyCeQ7ocpF1M7+BiXe7FMNrw/E26AwIhAK87OZMPrUtrjOksqWQ0aLqE\nxLmnKf8Pk6LaDa0atvwxAoIBAFXBf5vSFBk1fTXdir6HBCO541dC8Y8owkEVDkCS\nwgQ7XkQmfiiBKLQEdjLaJU5E9IHMPkimLD2hk3zIl9/vf3Jl7YNEFhtl8eTt6UxG\nPKPQyYzWhYNzEWPzaapSKUPb5G1iDglRzBKHeieiKgOZWDlhPTdp+dVQ/NkwOWWc\n1eq4UJ/1WOcnmJtRkiRSo4g+hqjGPnpLMdhpeom1bXBTDJmPB0JcI5+cF1kE2SoV\nR8AwTr2Tq5RR57i/+6JTT28A1VuqnRxXabdxEHj4CFxf/OZiFGiMejYUtDD2dS3L\ndBiprTyXX5r2pvV4gQLgN7cWGs/m6RSe1h0b+fwF0jK3a8ECggEACgsmHKlhvpPg\nXKSbzkwcC62S0nZ1TNUgg9584KYmHRd98zI0IO0d1biqzkqCYlhrnoudhziMORQF\naDz6ugurYZ+KyvUW83EOXYvLRIBeDWQtuzvYeRDxmj2vzlQwVQQfEi+ZjA2Xo+9q\nOFiYXVdznwwAYXZ4gtVX46XQdewtgzdKMIycHdxwrmOMxYRzxFiAGEkUon8U8pKX\nnasxd47gwtW12IRln3/wgVQYWykazdo/ysZnCuLdxHrxsV99sIn+Zt+TpUqIfJvE\nKhWNe5/MbBS4M0udzFEoLb0GJaf7WQGZkzAOCld3SKzdHmLp2WNmpj6BYfdlMpn8\nnNA1kwvNCwIhAIZsSOgtl/1mUm+bHuSysSs9oBWhc8RaDuHshE/jTG5C\n-----END DSA PRIVATE KEY-----\n",
+                    "ssh_host_rsa_key_private": "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAk7duvz4xB0tuwGxmC400dQrG5CZgxEhMbdDrlwK0xD6A9Kcd\n+bMO71vtsI9hTeiAno5Jun68Zzfbcq+kGo2GxhIHnMBVQEXLrr6D3JhF8sdNeHNP\ntMFROQV6AvAZJj7TJi8wnr7Qq23rM+vEuU8D6lDTsxOM5Vmziuc1A5xAwT2FdGqa\nKOVCDTNq+Qrilb6zymmNP2/MBo8GjM/kgj3zt1DLJDW2Qw58PvydF+uNs+Ue8iuH\noOMCvbRmxhcgbH4DBoaUQHzXNGx8Z1RQnoLypLBtAFfe4eDHw0AnxlCYG5rqekH8\n7hQqsAA0tr5Iufd+V6rWvcOzO3kKCEICVU+h/wIDAQABAoIBAH4pfxcr4OggDxmd\n+5IGKjWE3NZjyOYb8dshQvYZQ5cQ40cRrNJlkm3xEBNqgmruF1xUnrgAIp3t4SoU\nxY5ALknhgErrImTgt9Qpt6mjDKsMeihUJFF3gw22lb0IoBJAOks0pswOoV6pZOdV\niRHUYL2yBv29xurkMCqEyoyo2c2wl6tmACw0drOY7ZhOh3DKvvGf+o/M2oX8Sf7O\ntDWG7r8RE9tT3DbEjkw6E+tFuWlsY8FR5ULChQi+qR26vg1dSrHq7frRmjnBmaST\nwVPZBLB4sYXx30F7hpdheE+7ilMysTwhn3wMdQEQCLchomlFASkZMxLRINfo9jmH\nPxqu5qECgYEAwsIW09bwFZMlUIOIuunL01yYpdUtVUMuABZBXiFIl/q8CSwh46sE\nR8n15pziqPADbdP2ZAerKjielxgl4YIVSeNRaGcyvVVEhgFefmN9kbLwquTAiSZB\nAiiSc6aLDVtW0rAPGevb2/TYRq8tY5za5imkAliUWGn/OzgG5zI8xycCgYEAwiqF\njiDodIKLmJ6PX6oJQG9uTB3WlzRCe6/4TCEBfHSx3mMi7TWH+1t6BUIo4L6MvMEj\nK+atRKICfkJh2P0ukyTiImRPHjgx3x47PTCAEPuRFKFJubIGdPo88IRV6RTtS0jF\nwSEZ0MAN1+ELws7VXS41PcUSudMRfAn89SruVWkCgYEAmsnViMJgiFUtqAMSjbO5\nmqASdmKqqAQ/sDP/+gcsAhZ2kjewK5lFSqU6OfJgtvIjV4vKXRA3OtRLPz0jBkr0\nDoiLsBWtHwuA7Zxy9LKwHzd/zeMHHzn3GvcSBrbL926r38GsDucFE5lSt0MNKQmG\ndL2Nq4upQ2fjQbayzdeAtKsCgYAIpSgJKgHvnhhlFTpBAisjSVLZ5MI3PUZwh2dA\nzH9qcS+yPSvC8A077djC/y0exJ0zkk3kmILCeYwu3vnIVY2LU6sV6O105P+jdY8h\nrFUnbGwLRRspP3n2H2YzN1Ez7ZCbN4RGkxi5KLP1FroVVGw/l90bAPlSeMlggnlW\n2TB/cQKBgAkLaE+s39ul4drQWAywvd1qXALx2CgNRHb/UT+h/THAzSC4WHDWDyxm\nuwBzevg+XvUKVQ+4Jv4Bqe8EzrM8iigUJw/eUmoeFkgHfMYM+Km8YDZ8UBTdAFte\nU6rpse/qahgj7Q5KBe0MJ2jM0eIQxGaTwBOHy79UEH6+8ujz8AVV\n-----END RSA PRIVATE KEY-----\n"
+                }
+            ],
+            "users": [
+
+            ],
+            "elastic_load_balancers": [
+                {
+                    "elastic_load_balancer_name": "BNS-Forensics-Load-Balancer",
+                    "dns_name": "BNS-Forensics-Load-Balancer-681304807.us-east-1.elb.amazonaws.com",
+                    "layer_id": "12930ea6-7fe8-4419-8d0e-9c060a98aacb"
+                }
+            ],
+            "rds_db_instances": [
+                {
+                    "rds_db_instance_arn": "arn:aws:rds:us-east-1:239964847280:db:bns",
+                    "db_instance_identifier": "bns",
+                    "db_user": "bnsforen",
+                    "db_password": "Fender1984!",
+                    "region": "us-east-1",
+                    "address": "bns.cvjdki2agjzl.us-east-1.rds.amazonaws.com",
+                    "port": 3306,
+                    "engine": "mysql",
+                    "missing_on_rds": false
+                }
+            ],
+            "stack": {
+                "arn": "arn:aws:opsworks:us-east-1:239964847280:stack/6ecf48c3-2b1a-4000-a2d3-cbe496be0421/",
+                "custom_cookbooks_source": {
+                    "type": "archive",
+                    "url": "https://github.com/nodeworks/opsworks-cookbooks/raw/release-chef-11.10/cookbooks.tar.gz",
+                    "username": null,
+                    "password": null,
+                    "ssh_key": null,
+                    "revision": null
+                },
+                "name": "Production",
+                "region": "us-east-1",
+                "stack_id": "6ecf48c3-2b1a-4000-a2d3-cbe496be0421",
+                "use_custom_cookbooks": true,
+                "vpc_id": "vpc-db65bea2",
+                "color": "rgb(45, 114, 184)"
+            },
+            "ecs_clusters": [
+
+            ],
+            "volumes": [
+
+            ]
+        },
+        "chef": {
+            "customer_recipes": [
+                "phpapp::deploy_opsworks"
+            ],
+            "customer_json": "e30=\n",
+            "customer_data_bags": "e30=\n"
+        }
+    }
+}
