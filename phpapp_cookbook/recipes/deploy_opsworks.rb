@@ -4,6 +4,8 @@ app_path = "/var/app"
 # deploy git repo from opsworks app
 application app_path do
   git app_path do
+    user 'www-data'
+    group 'www-data'
     repository app['app_source']['url']
     deploy_key app['app_source']['ssh_key']
   end
