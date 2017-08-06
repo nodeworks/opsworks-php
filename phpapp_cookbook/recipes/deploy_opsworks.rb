@@ -3,6 +3,9 @@ app_path = "/var/www/" + app['attributes']['document_root']
 
 # deploy git repo from opsworks app
 application app_path do
+  owner 'www-data'
+  group 'www-data'
+
   git app_path do
     user 'www-data'
     group 'www-data'
