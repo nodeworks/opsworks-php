@@ -32,7 +32,7 @@ server {
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 
-        fastcgi_intercept_errors off;
+        fastcgi_intercept_errors on;
         fastcgi_buffer_size 16k;
         fastcgi_buffers 4 16k;
         fastcgi_connect_timeout 300;
@@ -42,18 +42,6 @@ server {
 
     location ~ (^|/)\. {
         return 403;
-    }
-
-    location @rewrite {
-        rewrite ^/(.*)$ /index.php?q=$1;
-    }
-
-    location ~ ^(/[a-z\-]+)?/system/files/ {
-        try_files $uri /index.php?$query_string;
-    }
-
-    location ~ ^/sites/.*/files/styles/ {
-        try_files $uri @rewrite;
     }
 
     location ~* \.(js|css|png|jpg|jpeg|gif|ico|pdf|doc|docx)$ {
