@@ -22,3 +22,9 @@ template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
   mode 0644
   variables( :app => app )
 end
+
+# restart nginx
+service "nginx" do
+  supports :status => true, :restart => true, :reload => true, :stop => true, :start => true
+  action :stop
+end
