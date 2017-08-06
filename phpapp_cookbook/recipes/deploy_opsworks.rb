@@ -16,7 +16,7 @@ end
 
 # Drupal 7 Nginx config file
 if app[:environment][:APP_TYPE] == 'drupal7'
-    template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
+    template "/etc/nginx/sites-enabled/#{app[:short_name]}" do
       source "drupal7.erb"
       owner "root"
       group "root"
@@ -27,7 +27,7 @@ end
 
 # Drupal 8 Nginx config file
 if app[:environment][:APP_TYPE] == 'drupal8'
-    template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
+    template "/etc/nginx/sites-enabled/#{app[:short_name]}" do
       source "drupal8.erb"
       owner "root"
       group "root"
@@ -38,7 +38,7 @@ end
 
 # Wordpress Nginx config file
 if app[:environment][:APP_TYPE] == 'wordpress'
-    template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
+    template "/etc/nginx/sites-enabled/#{app[:short_name]}" do
       source "wordpress.erb"
       owner "root"
       group "root"
