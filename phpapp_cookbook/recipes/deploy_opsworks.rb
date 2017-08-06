@@ -13,3 +13,11 @@ application app_path do
     deploy_key app['app_source']['ssh_key']
   end
 end
+
+# update nginx with the drupal site
+template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
+  source "drupal.erb"
+  owner "root"
+  group "root"
+  mode 0644
+end
