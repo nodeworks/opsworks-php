@@ -1,5 +1,5 @@
 app = search(:aws_opsworks_app).first
-app_path = "/var/www/" + app['attributes']['document_root']
+app_path = "/var/www/" + app[:attributes][:document_root]
 
 # deploy git repo from opsworks app
 application app_path do
@@ -9,18 +9,42 @@ application app_path do
   git app_path do
     user 'www-data'
     group 'www-data'
-    repository app['app_source']['url']
-    deploy_key app['app_source']['ssh_key']
+    repository app[:app_source][:url]
+    deploy_key app[:app_source][:ssh_key]
   end
 end
 
-# update nginx with the drupal site
-template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
-  source "drupal.erb"
-  owner "root"
-  group "root"
-  mode 0644
-  variables( :app => app )
+# Drupal 7 Nginx config file
+if app[:environment][:APP_TYPE] == 'drupal7'
+    template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
+      source "drupal7.erb"
+      owner "root"
+      group "root"
+      mode 0644
+      variables( :app => app )
+    end
+end
+
+# Drupal 8 Nginx config file
+if app[:environment][:APP_TYPE] == 'drupal8'
+    template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
+      source "drupal8.erb"
+      owner "root"
+      group "root"
+      mode 0644
+      variables( :app => app )
+    end
+end
+
+# Wordpress Nginx config file
+if app[:environment][:APP_TYPE] == 'wordpress'
+    template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
+      source "wordpress.erb"
+      owner "root"
+      group "root"
+      mode 0644
+      variables( :app => app )
+    end
 end
 
 # restart nginx

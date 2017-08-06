@@ -7,7 +7,7 @@ server {
     }
 
     server_name <%= @app[:domains].first %>;
-    root /var/www/<%= @app[:attributes][:document_root] %>/web;
+    root /var/www/<%= @app[:attributes][:document_root] %>;
 
     index index.html index.htm index.php;
 
