@@ -20,4 +20,5 @@ template "/etc/nginx/sites-enabled/#{app[:attributes][:document_root]}" do
   owner "root"
   group "root"
   mode 0644
+  variables( :app => app )
 end
