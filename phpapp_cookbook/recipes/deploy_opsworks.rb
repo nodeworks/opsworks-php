@@ -26,5 +26,5 @@ end
 # restart nginx
 service "nginx" do
   supports :status => true, :restart => true, :reload => true, :stop => true, :start => true
-  action :stop
+  action :reload
 end
