@@ -1,5 +1,5 @@
 app = search(:aws_opsworks_app).first
-app_path = "/var/www/" + app[:attributes][:document_root]
+app_path = "/var/www/" + app[:shortname]
 
 # deploy git repo from opsworks app
 application app_path do
