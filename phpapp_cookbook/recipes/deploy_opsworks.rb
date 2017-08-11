@@ -18,11 +18,7 @@ application app_path do
   execute "chown-data-www" do
     command "chown -R www-data:www-data #{app_path}"
     user "root"
-    action :nothing
-  end
-
-  resource "that may screw up perms" do
-    notifies :run, execute "chown-data-www"
+    action :run
   end
 end
 
