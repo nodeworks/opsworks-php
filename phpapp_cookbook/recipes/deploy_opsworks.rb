@@ -9,8 +9,8 @@ application app_path do
   group 'www-data'
 
   git app_path do
-    user 'www-data'
-    group 'www-data'
+    user 'root'
+    group 'root'
     repository app[:app_source][:url]
     deploy_key app[:app_source][:ssh_key]
   end
