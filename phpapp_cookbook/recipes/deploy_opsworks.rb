@@ -64,9 +64,6 @@ service "nginx" do
 end
 
 slack_notify "channel_nothing" do
-  message "heres a message to kick off later"
-  username 'OpsWorks'
-  channels ['general']
+  message "App #{app[:name]} deployed successfully"
   webhook_url 'https://hooks.slack.com/services/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'
-  icon_emoji ':tada:'
 end
