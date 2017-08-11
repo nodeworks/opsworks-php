@@ -82,7 +82,7 @@ server {
         try_files $uri @rewrite;
     }
 
-    location ~ ^/sites/.*/files/styles/ {
+    location ~ ^/s3/files/styles/ {
         try_files $uri @rewrite;
     }
 
