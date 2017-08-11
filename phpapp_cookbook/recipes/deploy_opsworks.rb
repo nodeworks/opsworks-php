@@ -1,4 +1,4 @@
-command = search(:aws_opsworks_app)
+command = search(:aws_opsworks_command).first
 deploy_app = command[:args][:app_ids].first
 app = search("aws_opsworks_app": "app_id:#{deploy_app}").first
 app_path = "/var/www/" + app[:shortname]
