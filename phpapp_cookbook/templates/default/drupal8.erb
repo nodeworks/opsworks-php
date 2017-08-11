@@ -6,6 +6,9 @@ server {
     if ($http_x_forwarded_proto != 'https') {
       return 301 https://$host$request_uri;
     }
+
+    ssl_certificate /etc/letsencrypt/live/<%= @app[:domains].first %>/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/<%= @app[:domains].first %>/privkey.pem;
     <% end -%>
 
     server_name <%= @app[:domains].first %>;
@@ -34,7 +37,7 @@ server {
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
 
-        fastcgi_intercept_errors off;
+        fastcgi_intercept_errors on;
         fastcgi_buffer_size 16k;
         fastcgi_buffers 4 16k;
         fastcgi_connect_timeout 300;
