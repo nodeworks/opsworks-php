@@ -60,3 +60,12 @@ service "nginx" do
   supports :status => true, :restart => true, :reload => true, :stop => true, :start => true
   action :reload
 end
+
+slack_notify "channel_nothing" do
+  message "heres a message to kick off later"
+  username 'OpsWorks'
+  channels ['general']
+  webhook_url 'https://hooks.slack.com/services/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'
+  icon_emoji ':tada:'
+  action :nothing
+end
