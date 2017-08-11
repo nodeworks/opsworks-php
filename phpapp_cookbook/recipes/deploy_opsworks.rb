@@ -69,5 +69,4 @@ slack_notify "channel_nothing" do
   channels ['general']
   webhook_url 'https://hooks.slack.com/services/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'
   icon_emoji ':tada:'
-  action :nothing
 end
